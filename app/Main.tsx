@@ -9,14 +9,23 @@ const MAX_DISPLAY = 5
 export default function Home({ posts }) {
   return (
     <>
+      <div className="space-y-6 pb-8 pt-6 md:space-y-5">
+        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          Hi, I'm Steven Yu
+        </h1>
+        <h2 className="text-xl leading-7 text-gray-500 dark:text-gray-400">
+          …and welcome to my site! I'm a computer science student at Cornell University, passionate about building cool stuff and solving interesting problems. 
+          You can take a look at what I've worked on <Link href={`/projects`} className="underline text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">here</Link>. 
+          I occasionally share my thoughts on school, coding, and more on my <Link href={`/blog`} className="underline text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">blog</Link>. 
+          You can learn about my experiences through my <Link href={`/resume.pdf`} className="underline text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">résumé</Link> and 
+          learn more about me <Link href={`/about`} className="underline text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">here</Link>. Hope you enjoy!
+        </h2>
+      </div>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Latest
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
