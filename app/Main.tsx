@@ -16,7 +16,7 @@ export default function Home({ posts }) {
         <h2 className="text-xl leading-7 text-gray-500 dark:text-gray-400">
           …and welcome to my site! I'm a computer science student at Cornell University, passionate
           about building cool stuff and solving interesting problems. You can take a look at what
-          I've worked on
+          I've worked on{' '}
           <Link
             href={`/projects`}
             className="text-primary-500 underline hover:text-primary-600 dark:hover:text-primary-400"
