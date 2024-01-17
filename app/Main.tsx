@@ -14,11 +14,37 @@ export default function Home({ posts }) {
           Hi, I'm Steven Yu
         </h1>
         <h2 className="text-xl leading-7 text-gray-500 dark:text-gray-400">
-          …and welcome to my site! I'm a computer science student at Cornell University, passionate about building cool stuff and solving interesting problems. 
-          You can take a look at what I've worked on <Link href={`/projects`} className="underline text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">here</Link>. 
-          I occasionally share my thoughts on school, coding, and more on my <Link href={`/blog`} className="underline text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">blog</Link>. 
-          You can learn about my experiences through my <Link href={`/resume.pdf`} className="underline text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">résumé</Link> and 
-          learn more about me <Link href={`/about`} className="underline text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">here</Link>. Hope you enjoy!
+          …and welcome to my site! I'm a computer science student at Cornell University, passionate
+          about building cool stuff and solving interesting problems. You can take a look at what
+          I've worked on
+          <Link
+            href={`/projects`}
+            className="text-primary-500 underline hover:text-primary-600 dark:hover:text-primary-400"
+          >
+            here
+          </Link>
+          . I occasionally share my thoughts on school, coding, and more on my{' '}
+          <Link
+            href={`/blog`}
+            className="text-primary-500 underline hover:text-primary-600 dark:hover:text-primary-400"
+          >
+            blog
+          </Link>
+          . You can learn about my experiences through my{' '}
+          <Link
+            href={`/resume.pdf`}
+            className="text-primary-500 underline hover:text-primary-600 dark:hover:text-primary-400"
+          >
+            résumé
+          </Link>{' '}
+          and learn more about me{' '}
+          <Link
+            href={`/about`}
+            className="text-primary-500 underline hover:text-primary-600 dark:hover:text-primary-400"
+          >
+            here
+          </Link>
+          . Hope you enjoy!
         </h2>
       </div>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
