@@ -1,10 +1,13 @@
-import projectsData from '@/data/projectsData'
+import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
+import { allProjects } from 'contentlayer/generated'
 import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Projects' })
 
 export default function Projects() {
+  const projects = allCoreContent(sortPosts(allProjects))
+
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -18,13 +21,13 @@ export default function Projects() {
         </div>
         <div className="container py-12">
           <div className="-m-4 flex flex-wrap">
-            {projectsData.map((d) => (
+            {projects.map((d) => (
               <Card
                 key={d.title}
                 title={d.title}
-                description={d.description}
-                imgSrc={d.imgSrc}
-                href={d.href}
+                description={d.summary}
+                imgSrc={d.hero}
+                href={`/projects/${d.slug}`}
               />
             ))}
           </div>
