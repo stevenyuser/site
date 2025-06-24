@@ -32,7 +32,7 @@ export default function Home({ posts }) {
           </Link>
           . You can learn about my experiences through my{' '}
           <Link
-            href={`/Steven_Yu.pdf`}
+            href={`/Steven_Yu_Resume.pdf`}
             className="text-primary-500 underline hover:text-primary-600 dark:hover:text-primary-400"
           >
             résumé
